@@ -17,6 +17,16 @@
       crossorigin=""
     />
     <script
+      type="module"
+      defer
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      defer
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
       defer
       src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
@@ -117,7 +127,14 @@
           </div>
         </li> -->
       </ul>
-
+      <div class="btns">
+        <button class="btn-refresh" title="Refresh Site">
+          <ion-icon class="btn-icon" name="refresh-outline"></ion-icon>
+        </button>
+        <button class="btn-clear" title="Clear All Workouts">
+          <ion-icon class="btn-icon" name="trash-outline"></ion-icon>
+        </button>
+      </div>
       <p class="copyright">
         &copy; Copyright by
         <a
